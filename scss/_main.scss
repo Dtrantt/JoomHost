@@ -43,21 +43,30 @@ body {
 
     li {
       padding-left: 72px;
-      background-repeat: no-repeat;
-      background-position: 45px center;
+
+      a {
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: #fff;
+        }
+      }
     }
   }
 
   &_email {
-    background-image: url(../img/email_icon.png);
-
-    &:hover {
-      color: #fff;
+    .fa-envelope {
+      font-size: 19px;
+      padding-right: 5px;
     }
   }
 
   &_phone {
-    background-image: url(../img/phone_icon.png);
+    .fa-phone-volume {
+      font-size: 19px;
+      padding-right: 5px;
+    }
   }
 }
 
@@ -98,5 +107,85 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     margin-left: 35px;
+
+    &:hover {
+      color: $blue-main;
+    }
   }
 }
+
+.banner {
+  background-image: url(../img/banner_bg.jpg);
+  color: #fff;
+  padding-top: 165px; 
+  padding-bottom: 270px;
+
+  &_content {
+    display: flex;
+    padding: 0 10px;
+  }
+
+  &_simple {
+    line-height: 1.71;
+  }
+  &_heading {
+    font-family: $font-roboto;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 1.08;
+    font-weight: 700;
+  }
+
+  &_start_prise {
+    font-size: 19px;
+    line-height: 2.74;
+  }
+
+  &_banner_enter {
+    line-height: 1.71;
+  }
+
+  &_servises {
+    margin-top: 42px;
+    margin-bottom: 53px;
+  }
+
+  .fa-check-square,
+  .fa-wordpress-simple {
+    color: #000;
+  }
+  
+  .fa-check-square {
+    padding-right: 10px;
+  }
+
+  &_button {
+    display: inline-block;
+    padding: 10px 30px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 35px;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: #fff;
+      color: $blue-main;
+      transition: all .4s ease;
+    }
+  }
+
+  &_img {
+    display: flex;
+    align-items: flex-end;
+
+    img {
+      max-width: 100%;
+    }
+
+    img:first-child {
+      padding-right: 40px;
+    }
+  }
+}
+
+
