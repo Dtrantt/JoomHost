@@ -32,7 +32,7 @@ body {
 .header_top_line_inner {
   display: flex;
   justify-content: space-between;
-  padding: 15px 10px;
+  padding: 1.07rem 0.71rem;
 }
 
 .contact {
@@ -42,7 +42,7 @@ body {
     display: flex;
 
     li {
-      padding-left: 72px;
+      padding-left: 5.14rem;
 
       a {
         display: flex;
@@ -56,30 +56,30 @@ body {
   }
 
   &_email {
-    .fa-envelope {
-      font-size: 19px;
-      padding-right: 5px;
+    .material-icons {
+      font-size: 1.35rem;
+      padding-right: 0.35rem;
     }
   }
 
   &_phone {
-    .fa-phone-volume {
-      font-size: 19px;
-      padding-right: 5px;
+    .material-icons {
+      font-size: 1.35rem;
+      padding-right: 0.35rem;
     }
   }
 }
 
 .user {
   a {
-    margin-left: 20px;
+    margin-left: 1.42rem;
   }
 }
 
 .header_content {
   font-family: $font-roboto;
   color: $light-dark;
-  padding: 25px 10px;
+  padding: 1.78rem 0.71rem;
 }
 
 .header_content_inner {
@@ -93,10 +93,10 @@ body {
   align-items: center;
 
   &_text {
-    font-size: 22px;
+    font-size: 1.57rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-left: 10px;
+    margin-left: 0.71rem;
   }
 }
 
@@ -106,7 +106,7 @@ body {
   &_item {
     text-transform: uppercase;
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 2.5rem;
 
     &:hover {
       color: $blue-main;
@@ -117,12 +117,13 @@ body {
 .banner {
   background-image: url(../img/banner_bg.jpg);
   color: #fff;
-  padding-top: 165px; 
-  padding-bottom: 270px;
+  padding-top: 11.78rem; 
+  padding-bottom: 19.28rem;
+  position: relative;
 
   &_content {
     display: flex;
-    padding: 0 10px;
+    padding: 0 0.71rem;
   }
 
   &_simple {
@@ -131,13 +132,13 @@ body {
   &_heading {
     font-family: $font-roboto;
     text-transform: uppercase;
-    font-size: 48px;
+    font-size: 3.42rem;
     line-height: 1.08;
     font-weight: 700;
   }
 
   &_start_prise {
-    font-size: 19px;
+    font-size: 1.35rem;
     line-height: 2.74;
   }
 
@@ -146,25 +147,27 @@ body {
   }
 
   &_servises {
-    margin-top: 42px;
-    margin-bottom: 53px;
-  }
+    margin-top: 3rem;
+    margin-bottom: 3.78rem;
 
-  .fa-check-square,
-  .fa-wordpress-simple {
-    color: #000;
-  }
-  
-  .fa-check-square {
-    padding-right: 10px;
+    &_item {
+      display: flex;
+      align-items: center;
+      margin-top: 5px;
+
+      .material-icons {
+        color: #000;
+        padding-right: 0.71rem;
+      }
+    }
   }
 
   &_button {
     display: inline-block;
-    padding: 10px 30px;
-    margin-bottom: 20px;
+    padding: 0.71rem 2.14rem;
+    margin-bottom: 1.42rem;
     border: 2px solid #fff;
-    border-radius: 35px;
+    border-radius: 2.5rem;
     text-transform: uppercase;
 
     &:hover {
@@ -183,7 +186,73 @@ body {
     }
 
     img:first-child {
-      padding-right: 40px;
+      padding-right: 2.85rem;
+    }
+  }
+}
+
+.domain {
+  width: 99%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: -12rem;
+  transform: translateX(-50%);
+  padding: 0 7.85rem;
+  padding-top: 7.85rem;
+  padding-bottom: 5.35rem;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+
+  form {
+    display: flex;
+  }
+
+  &_search {
+    width: 75%;
+    padding: 2rem 2.28rem;
+    border: none;
+    box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+  }
+
+  &_sub {
+    width: 25%;
+    background-color: $blue-main;
+    color: #fff;
+    border: none;
+    padding: 2rem 3.5rem;
+  }
+
+  &_color {
+
+    margin-top: 2.5rem;
+
+    span {
+      padding-right: 1.42rem;
+    }
+
+    &_com {
+      color: map-get($color_domain, 'com');
+    }
+  
+    &_asia {
+      color: map-get($color_domain, 'asia');
+    }
+
+    &_online {
+      color: map-get($color_domain, 'online');
+    }
+
+    &_me {
+      color: map-get($color_domain, 'me');
+    }
+
+    &_cn {
+      color: map-get($color_domain, 'cn');
+    }
+
+    &_text {
+      color: $light-dark;
+      padding-left: 4.28rem;
     }
   }
 }

@@ -32,7 +32,7 @@ body {
 .header_top_line_inner {
   display: flex;
   justify-content: space-between;
-  padding: 15px 10px;
+  padding: 1.07rem 0.71rem;
 }
 
 .contact {
@@ -44,7 +44,7 @@ body {
 }
 
 .contact_box li {
-  padding-left: 72px;
+  padding-left: 5.14rem;
 }
 
 .contact_box li a {
@@ -56,24 +56,24 @@ body {
   color: #fff;
 }
 
-.contact_email .fa-envelope {
-  font-size: 19px;
-  padding-right: 5px;
+.contact_email .material-icons {
+  font-size: 1.35rem;
+  padding-right: 0.35rem;
 }
 
-.contact_phone .fa-phone-volume {
-  font-size: 19px;
-  padding-right: 5px;
+.contact_phone .material-icons {
+  font-size: 1.35rem;
+  padding-right: 0.35rem;
 }
 
 .user a {
-  margin-left: 20px;
+  margin-left: 1.42rem;
 }
 
 .header_content {
   font-family: "Roboto", sans-serif;
   color: #2f3f54;
-  padding: 25px 10px;
+  padding: 1.78rem 0.71rem;
 }
 
 .header_content_inner {
@@ -88,10 +88,10 @@ body {
 }
 
 .logo_text {
-  font-size: 22px;
+  font-size: 1.57rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin-left: 10px;
+  margin-left: 0.71rem;
 }
 
 .nav {
@@ -101,7 +101,7 @@ body {
 .nav_item {
   text-transform: uppercase;
   font-weight: 700;
-  margin-left: 35px;
+  margin-left: 2.5rem;
 }
 
 .nav_item:hover {
@@ -111,13 +111,14 @@ body {
 .banner {
   background-image: url(../img/banner_bg.jpg);
   color: #fff;
-  padding-top: 165px;
-  padding-bottom: 270px;
+  padding-top: 11.78rem;
+  padding-bottom: 19.28rem;
+  position: relative;
 }
 
 .banner_content {
   display: flex;
-  padding: 0 10px;
+  padding: 0 0.71rem;
 }
 
 .banner_simple {
@@ -127,13 +128,13 @@ body {
 .banner_heading {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: 48px;
+  font-size: 3.42rem;
   line-height: 1.08;
   font-weight: 700;
 }
 
 .banner_start_prise {
-  font-size: 19px;
+  font-size: 1.35rem;
   line-height: 2.74;
 }
 
@@ -142,25 +143,27 @@ body {
 }
 
 .banner_servises {
-  margin-top: 42px;
-  margin-bottom: 53px;
+  margin-top: 3rem;
+  margin-bottom: 3.78rem;
 }
 
-.banner .fa-check-square,
-.banner .fa-wordpress-simple {
+.banner_servises_item {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.banner_servises_item .material-icons {
   color: #000;
-}
-
-.banner .fa-check-square {
-  padding-right: 10px;
+  padding-right: 0.71rem;
 }
 
 .banner_button {
   display: inline-block;
-  padding: 10px 30px;
-  margin-bottom: 20px;
+  padding: 0.71rem 2.14rem;
+  margin-bottom: 1.42rem;
   border: 2px solid #fff;
-  border-radius: 35px;
+  border-radius: 2.5rem;
   text-transform: uppercase;
 }
 
@@ -180,5 +183,76 @@ body {
 }
 
 .banner_img img:first-child {
-  padding-right: 40px;
+  padding-right: 2.85rem;
+}
+
+.domain {
+  width: 99%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: -12rem;
+  transform: translateX(-50%);
+  padding: 0 7.85rem;
+  padding-top: 7.85rem;
+  padding-bottom: 5.35rem;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+}
+
+.domain form {
+  display: flex;
+}
+
+.domain_search {
+  width: 75%;
+  padding: 2rem 2.28rem;
+  border: none;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+}
+
+.domain_sub {
+  width: 25%;
+  background-color: #2575e7;
+  color: #fff;
+  border: none;
+  padding: 2rem 3.5rem;
+}
+
+.domain_color {
+  margin-top: 2.5rem;
+}
+
+.domain_color span {
+  padding-right: 1.42rem;
+}
+
+.domain_color_com {
+  color: #2575e7;
+}
+
+.domain_color_asia {
+  color: #28aa15;
+}
+
+.domain_color_online {
+  color: #ea3700;
+}
+
+.domain_color_me {
+  color: #0076c8;
+}
+
+.domain_color_cn {
+  color: #00e2aa;
+}
+
+.domain_color_text {
+  color: #2f3f54;
+  padding-left: 4.28rem;
+}
+
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
 }
