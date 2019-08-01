@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  font-size: 14px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -13,9 +17,12 @@ a {
   color: inherit;
 }
 
+.blue {
+  color: #2575e7;
+}
+
 body {
   font-family: "Lato", sans-serif;
-  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -186,6 +193,32 @@ body {
   padding-right: 2.85rem;
 }
 
+.banner_img_block {
+  position: relative;
+}
+
+.start_prise {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -4.42rem;
+  right: -7.14rem;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #000;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 65px 45px;
+}
+
+.start_prise .prise {
+  font-size: 4rem;
+}
+
+.start_prise span:last-child {
+  align-self: flex-end;
+}
+
 .domain {
   width: 99%;
   background-color: #fff;
@@ -249,6 +282,70 @@ body {
 .domain_color_text {
   color: #2f3f54;
   padding-left: 4.28rem;
+}
+
+.we_offer {
+  margin-top: 290px;
+}
+
+.offer {
+  display: flex;
+}
+
+.servises {
+  display: flex;
+  max-width: 740px;
+  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+}
+
+.servises_icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.servises_icon_item {
+  margin-top: 8.5rem;
+}
+
+.servises_icon_item:first-child {
+  margin-top: 19.7rem;
+}
+
+.servises_list {
+  background-color: #2575e7;
+  color: #fff;
+  padding: 6.07rem 4.28rem 0 3rem;
+}
+
+.servises_list_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.85rem;
+  margin-bottom: 4.42rem;
+}
+
+.servises_item {
+  margin-bottom: 4rem;
+}
+
+.servises_item_title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.42rem;
+  margin-bottom: 1.2rem;
+}
+
+.servises_lots {
+  width: 60%;
+  margin-left: 4.71rem;
+}
+
+.servises_lots_title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.85rem;
+  margin: 2.64rem 0;
+  white-space: pre-line;
+  font-weight: 900;
 }
 
 @media screen and (max-width: 1024px) {

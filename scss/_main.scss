@@ -4,6 +4,10 @@
   padding: 0; 
 }
 
+html {
+  font-size: 14px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -13,9 +17,12 @@ a {
   color: inherit;
 }
 
+.blue {
+  color: $blue-main;
+}
+
 body {
   font-family: $font-lato;
-  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -49,7 +56,7 @@ body {
         align-items: center;
 
         &:hover {
-          color: #fff;
+          color: $white;
         }
       }
     }
@@ -116,7 +123,7 @@ body {
 
 .banner {
   background-image: url(../img/banner_bg.jpg);
-  color: #fff;
+  color: $white;
   padding-top: 11.78rem; 
   padding-bottom: 19.28rem;
   position: relative;
@@ -156,7 +163,7 @@ body {
       margin-top: 5px;
 
       .material-icons {
-        color: #000;
+        color: $black;
         padding-right: 0.71rem;
       }
     }
@@ -166,12 +173,12 @@ body {
     display: inline-block;
     padding: 0.71rem 2.14rem;
     margin-bottom: 1.42rem;
-    border: 2px solid #fff;
+    border: 2px solid $white;
     border-radius: 2.5rem;
     text-transform: uppercase;
 
     &:hover {
-      background-color: #fff;
+      background-color: $white;
       color: $blue-main;
       transition: all .4s ease;
     }
@@ -188,12 +195,39 @@ body {
     img:first-child {
       padding-right: 2.85rem;
     }
+
+    &_block {
+      position: relative;
+    }
   }
 }
 
+.start_prise {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -4.42rem;
+  right: -7.14rem;
+  border-radius: 50%;
+  background-color: $white;
+  color: $black;
+  font-weight: 700;
+  line-height: 1.2;
+  padding: 65px 45px;
+
+  .prise {
+    font-size: 4rem;
+  }
+
+  span:last-child {
+    align-self: flex-end;
+  }
+}
+
+
 .domain {
   width: 99%;
-  background-color: #fff;
+  background-color: $white;
   position: absolute;
   left: 50%;
   bottom: -12rem;
@@ -201,7 +235,7 @@ body {
   padding: 0 7.85rem;
   padding-top: 7.85rem;
   padding-bottom: 5.35rem;
-  box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+  box-shadow: 0px 21px 49px 1px $shadow-color;
 
   form {
     display: flex;
@@ -211,13 +245,13 @@ body {
     width: 75%;
     padding: 2rem 2.28rem;
     border: none;
-    box-shadow: 0px 21px 49px 1px rgba(41, 44, 61, 0.15);
+    box-shadow: 0px 21px 49px 1px $shadow-color;
   }
 
   &_sub {
     width: 25%;
     background-color: $blue-main;
-    color: #fff;
+    color: $white;
     border: none;
     padding: 2rem 3.5rem;
   }
@@ -257,4 +291,66 @@ body {
   }
 }
 
+.we_offer {
+  margin-top: 290px;
+}
 
+.offer {
+  display: flex;
+}
+
+.servises {
+  display: flex;
+  max-width: 740px;
+  box-shadow: 0px 21px 49px 1px $shadow-color;
+
+  &_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem;
+
+    &_item {
+      &:first-child {
+        margin-top: 19.7rem;
+      }
+
+      margin-top: 8.5rem;
+    }
+  }
+
+  &_list {
+    background-color: $blue-main;
+    color: $white;
+    padding: 6.07rem 4.28rem 0 3rem;
+
+    &_title {
+      font-family: $font-roboto;
+      font-size: 2.85rem;
+      margin-bottom: 4.42rem;
+    }
+  }
+
+  &_item {
+    margin-bottom: 4rem;
+
+    &_title {
+      font-family: $font-sans;
+      font-size: 1.42rem;
+      margin-bottom: 1.2rem
+    }
+  }
+}
+
+.servises_lots {
+  width: 60%;
+  margin-left: 4.71rem;
+
+  &_title {
+    font-family: $font-roboto;
+    font-size: 2.85rem;
+    margin: 2.64rem 0;
+    white-space: pre-line;
+    font-weight: 900;
+  }
+}
